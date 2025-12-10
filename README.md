@@ -34,19 +34,6 @@ This interactive website investigates what it means for a digital document to be
 
 4. Open your browser and visit the URL shown in the terminal (typically `http://localhost:5173`)
 
-### Building for Production
-
-To create a production build:
-
-```bash
-npm run build
-```
-
-To preview the production build locally:
-
-```bash
-npm run preview
-```
 
 ## Tech Stack
 
