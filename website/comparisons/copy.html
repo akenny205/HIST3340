@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instant Duplicability | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/#comparison">← Back to Comparison</a></li>
+        </ul>
+      </nav>
+
+      <section class="section comparison-detail">
+        <div class="section-header">
+          <span class="section-number">💻</span>
+          <h2>Instant Duplicability</h2>
+        </div>
+        <div class="section-content">
+          <div class="detail-content">
+            <p class="lead-text">A PDF can be copied infinitely, instantly, and perfectly. Each copy identical to the original at zero marginal cost.</p>
+            
+            <div class="diagram-split">
+              <div class="metadata-explanation">
+                <h3>The Economics of Copying</h3>
+                <p>Before digital texts, reproducing a document required significant resources:</p>
+                
+                <div class="copy-comparison-grid">
+                  <div class="copy-card print-copy">
+                    <h4>📜 Manuscript Era</h4>
+                    <ul>
+                      <li>Months of scribal labor</li>
+                      <li>Expensive vellum or parchment</li>
+                      <li>Each copy unique (with errors)</li>
+                      <li>Limited to those who could afford scribes</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="copy-card print-copy">
+                    <h4>🖨️ Print Era</h4>
+                    <ul>
+                      <li>Typesetting and press setup</li>
+                      <li>Paper, ink, binding materials</li>
+                      <li>Physical storage and distribution</li>
+                      <li>Cost per copy decreases with volume</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="copy-card digital-copy">
+                    <h4>💻 PDF Era</h4>
+                    <ul>
+                      <li>Ctrl+C, Ctrl+V</li>
+                      <li>No material cost</li>
+                      <li>Perfect fidelity every time</li>
+                      <li>Instant global distribution</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>What Does "Original" Mean?</h3>
+                <p>With print, there's a meaningful distinction between an original and a copy. A first edition has value precisely because it's <em>not</em> a reproduction. But when every PDF is bit-for-bit identical, the concept of "original" becomes complicated.</p>
+                <p>The file on your computer is indistinguishable from the file on mine. There's no wear, no patina, no provenance written into the object itself.</p>
+
+                <h3>Implications for Access</h3>
+                <p>Instant duplicability has democratized access to texts in unprecedented ways. Academic papers, historical documents, and literature can spread globally in seconds. Yet this same feature enables piracy and challenges traditional publishing economics.</p>
+              </div>
+
+              <div class="objects-container">
+                <h4>The Copy Operation</h4>
+                
+                <div class="object-block">
+                  <span class="object-label">What Happens When You Copy</span>
+                  <pre class="object-code"><span class="highlight">Original file:</span>
+document.pdf
+Size: 245,832 bytes
+MD5: 8f14e45f...
+
+<span class="highlight">After copy:</span>
+document_copy.pdf
+Size: 245,832 bytes
+MD5: 8f14e45f...</pre>
+                  <p class="object-note">Identical in every way, same bytes, same hash</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Time to Copy</span>
+                  <pre class="object-code">Manuscript: <span class="highlight">~6 months</span>
+Printed book: <span class="highlight">~days to weeks</span>
+PDF file: <span class="highlight">~milliseconds</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Cost Per Copy</span>
+                  <pre class="object-code">Manuscript: <span class="highlight">$$$$$</span> (scribal labor)
+Printed book: <span class="highlight">$$</span> (materials + labor)
+PDF file: <span class="highlight">≈ $0</span> (electricity only)</pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Degradation</span>
+                  <pre class="object-code">Manuscript: <span class="highlight">Errors accumulate</span>
+Printed book: <span class="highlight">Physical wear</span>
+PDF file: <span class="highlight">None* (unless the format becomes obsolete)</span></pre>
+                  <p class="object-note">*Unless the format becomes obsolete</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reflection-box" style="margin-top: var(--space-xl);">
+              <h4>Historical Perspective</h4>
+              <p>The printing press was revolutionary because it reduced the cost of copying by orders of magnitude. The PDF continues this trajectory to its logical extreme: copying becomes essentially free. This fundamentally changes the economics of knowledge distribution and raises questions about ownership, copyright, and the value of textual objects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

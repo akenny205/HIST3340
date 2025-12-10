@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation -->
+      <nav class="main-nav">
+        <div class="nav-brand">PDF Materiality</div>
+        <ul class="nav-links">
+          <li><a href="#intro">Introduction</a></li>
+          <li><a href="#comparison">Print vs. Digital</a></li>
+          <li><a href="#mechanics">How PDFs Work</a></li>
+          <li><a href="#ownership">Ownership</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="/about.html" class="nav-about">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero">
+        <div class="hero-content">
+          <span class="hero-label">HIST 3340 • Technologies of Text</span>
+          <h1>The Materiality of the PDF</h1>
+          <p class="hero-subtitle">How digital interfaces change what it means to encounter a piece of text</p>
+          <p class="hero-author">Andrew Kenny</p>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-doc doc-print">
+            <span class="doc-icon">📜</span>
+            <span class="doc-label">Print</span>
+          </div>
+          <div class="floating-doc doc-digital">
+            <span class="doc-icon">.pdf</span>
+            <span class="doc-label">Digital</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Introduction Section -->
+      <section id="intro" class="section">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>Introduction</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <p class="lead-text">What does it mean for a digital document to be treated as a piece of text?</p>
+            <p>The PDF shares many qualities with printed texts, manuscripts, and other textual pieces. Yet it exists in a fundamentally different realm, one of electricity, software, and instant duplicability.</p>
+            <p>This project investigates how the digital world shapes our understanding of what a "text" is, examining how the PDF is similar to and different from traditional pieces of text in how it is read, owned, and preserved.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Section -->
+      <section id="comparison" class="section section-dark">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2>Print vs. Digital</h2>
+        </div>
+        <div class="section-content">
+          <p class="section-intro">Toggle between attributes to explore the material differences between printed pages and PDF documents.</p>
+          
+          <div class="comparison-container">
+            <div class="comparison-column print-column">
+              <h3><span class="column-icon">📖</span> Printed Page</h3>
+              <ul class="attribute-list" id="print-attributes">
+                <li class="attribute-item" data-attribute="material">
+                  <a href="/comparisons/material.html" class="attribute-link">
+                    <span class="attribute-name">Paper Type</span>
+                    <span class="attribute-desc">Physical texture, weight, and quality of paper stock</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="marking">
+                  <a href="/comparisons/marking.html" class="attribute-link">
+                    <span class="attribute-name">Ink</span>
+                    <span class="attribute-desc">Chemical composition pressed into fibers</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="structure">
+                  <a href="/comparisons/structure.html" class="attribute-link">
+                    <span class="attribute-name">Binding</span>
+                    <span class="attribute-desc">Physical assembly holding pages together</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="typography">
+                  <a href="/comparisons/typography.html" class="attribute-link">
+                    <span class="attribute-name">Font</span>
+                    <span class="attribute-desc">Metal type or phototypeset letterforms</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="arrangement">
+                  <a href="/comparisons/arrangement.html" class="attribute-link">
+                    <span class="attribute-name">Layout</span>
+                    <span class="attribute-desc">Fixed spatial arrangement on the page</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="comparison-divider">
+              <span class="divider-text">vs</span>
+            </div>
+
+            <div class="comparison-column digital-column">
+              <h3><span class="column-icon">💻</span> PDF Document</h3>
+              <ul class="attribute-list" id="pdf-attributes">
+                <li class="attribute-item" data-attribute="dependency">
+                  <a href="/comparisons/dependency.html" class="attribute-link">
+                    <span class="attribute-name">Software Dependency</span>
+                    <span class="attribute-desc">Requires electricity and rendering software</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="copy">
+                  <a href="/comparisons/copy.html" class="attribute-link">
+                    <span class="attribute-name">Instant Duplicability</span>
+                    <span class="attribute-desc">Perfect copies created at zero marginal cost</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="deletion">
+                  <a href="/comparisons/deletion.html" class="attribute-link">
+                    <span class="attribute-name">Deletability</span>
+                    <span class="attribute-desc">Can be (kind of) erased, but traces remain</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="metadata">
+                  <a href="/comparisons/metadata.html" class="attribute-link">
+                    <span class="attribute-name">Metadata</span>
+                    <span class="attribute-desc">Hidden information about creation and edits</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="links">
+                  <a href="/comparisons/links.html" class="attribute-link">
+                    <span class="attribute-name">Hyperlinks</span>
+                    <span class="attribute-desc">Clickable connections to other documents</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+                <li class="attribute-item" data-attribute="compression">
+                  <a href="/comparisons/compression.html" class="attribute-link">
+                    <span class="attribute-name">Compression</span>
+                    <span class="attribute-desc">Data reduced for storage efficiency</span>
+                    <span class="attribute-arrow">→</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How PDFs Work Section -->
+      <section id="mechanics" class="section">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2>Behind the Scenes</h2>
+        </div>
+        <div class="section-content">
+          <p class="section-intro">A PDF may seem like a simple page on a screen, but beneath its visual appearance lies complex technology.</p>
+          
+          <div class="mechanics-grid">
+            <div class="mechanic-card">
+              <div class="mechanic-icon">🔤</div>
+              <h4>Rendering</h4>
+              <p>Software interprets PDF code to display text and images. A Kindle may render differently than a laptop.</p>
+            </div>
+            <div class="mechanic-card">
+              <div class="mechanic-icon">📐</div>
+              <h4>Pagination</h4>
+              <p>Unlike web pages, PDFs preserve fixed page breaks and layouts across different viewers.</p>
+            </div>
+            <div class="mechanic-card">
+              <div class="mechanic-icon">🗜️</div>
+              <h4>Compression</h4>
+              <p>Images and text are compressed to reduce file size while maintaining visual fidelity.</p>
+            </div>
+            <div class="mechanic-card">
+              <div class="mechanic-icon">🔗</div>
+              <h4>Embedded Objects</h4>
+              <p>Fonts, images, and even interactive forms can be embedded within a single file.</p>
+            </div>
+          </div>
+
+          <div class="interactive-demo">
+            <h4>Interactive: Explore PDF Layers</h4>
+            <div class="layer-toggles">
+              <button class="layer-btn active" data-layer="visual">Visual Layer</button>
+              <button class="layer-btn" data-layer="text">Text Layer</button>
+              <button class="layer-btn" data-layer="metadata">Metadata</button>
+            </div>
+            <div class="layer-display">
+              <div class="layer-content" id="layer-visual">
+                <div class="mock-pdf">
+                  <p class="mock-title">Sample Document</p>
+                  <p class="mock-body">This is what you see when viewing a PDF, the rendered visual output displayed by your software.</p>
+                </div>
+              </div>
+              <div class="layer-content hidden" id="layer-text">
+                <pre class="code-display">
+/Type /Page
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources &lt;&lt;
+  /Font &lt;&lt;
+    /F1 5 0 R
+  &gt;&gt;
+&gt;&gt;</pre>
+              </div>
+              <div class="layer-content hidden" id="layer-metadata">
+                <div class="metadata-list">
+                  <div class="metadata-item"><span>Author:</span> Andrew Kenny</div>
+                  <div class="metadata-item"><span>Created:</span> 2025-12-01</div>
+                  <div class="metadata-item"><span>Modified:</span> 2025-12-01</div>
+                  <div class="metadata-item"><span>Software:</span> Adobe Acrobat</div>
+                  <div class="metadata-item"><span>Keywords:</span> history, digital, text</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ownership Section -->
+      <section id="ownership" class="section section-accent">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2>Ownership & Access</h2>
+        </div>
+        <div class="section-content">
+          <div class="ownership-intro">
+            <p>Do PDFs maintain the same sense of ownership that print texts do? The answer is complicated.</p>
+          </div>
+          
+          <div class="ownership-comparison">
+            <div class="ownership-card">
+              <h4>📚 Owning a Book</h4>
+              <ul>
+                <li>Physical possession</li>
+                <li>Can lend, sell, or gift</li>
+                <li>Degrades over time</li>
+                <li>One copy per purchase</li>
+                <li>Marginalia becomes part of the object</li>
+              </ul>
+            </div>
+            <div class="ownership-card">
+              <h4>📄 Owning a PDF</h4>
+              <ul>
+                <li>File on a device</li>
+                <li>Infinitely copyable</li>
+                <li>Doesn't degrade (but formats change)</li>
+                <li>Often licensed, not owned</li>
+                <li>Annotations may not persist</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reflection-box">
+            <h4>Consider:</h4>
+            <p>Developments in the creation of texts and their digitization have shaped who has access to texts along with information throughout history. The labor involved in producing texts has changed dramatically over time.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion Section -->
+      <section id="conclusion" class="section">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2>Conclusion</h2>
+        </div>
+        <div class="section-content">
+          <div class="conclusion-text">
+            <p class="lead-text">Digital texts represent new configurations of textual technology and experience.</p>
+            <p>The PDF's materiality, its ease of creation, deletion, and sharing, along with features like hyperlinks, pagination, and compression, offers a sharp contrast to the invention and evolution of print materials.</p>
+            <p>Rather than viewing digital texts as simple replacements for print, we might better understand them as artifacts with their own generative processes and histories.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

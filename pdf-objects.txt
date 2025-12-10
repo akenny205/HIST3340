@@ -1,0 +1,108 @@
+----- OBJECT 1 -----
+<< /AAPL:Keywords 41 0 R /Author 36 0 R /CreationDate 39 0 R /Creator 38 0 R /Keywords 40 0 R /ModDate 39 0 R /Producer 35 0 R /Subject 37 0 R /Title 34 0 R >>
+----- OBJECT 2 -----
+<< /Contents 4 0 R /MediaBox [ 0 0 612 792 ] /Parent 3 0 R /Resources 6 0 R /Type /Page >>
+----- OBJECT 3 -----
+<< /Count 3 /Kids [ 2 0 R 14 0 R 18 0 R ] /MediaBox [ 0 0 612 792 ] /Type /Pages >>
+----- OBJECT 4 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 5 0 R >>
+----- OBJECT 5 -----
+6917
+----- OBJECT 6 -----
+<< /ColorSpace << /Cs1 7 0 R >> /Font << /TT2 9 0 R /TT3 10 0 R /TT4 11 0 R >> /ProcSet [ /PDF /Text ] >>
+----- OBJECT 7 -----
+[ /ICCBased 12 0 R ]
+----- OBJECT 8 -----
+null
+----- OBJECT 9 -----
+<< /BaseFont /OYOJDU+Calibri /FirstChar 33 /FontDescriptor 23 0 R /LastChar 36 /Subtype /TrueType /ToUnicode 24 0 R /Type /Font /Widths [ 226 507 507 507 ] >>
+----- OBJECT 10 -----
+<< /BaseFont /TIDYFN+CenturySchoolbook-Bold /Encoding /MacRomanEncoding /FirstChar 32 /FontDescriptor 31 0 R /LastChar 112 /Subtype /TrueType /Type /Font /Widths [ 287 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 833 0 722 0 0 0 0 0 0 0 0 0 759 0 0 667 0 0 0 0 0 0 0 0 0 0 0 0 0 611 0 0 0 574 0 0 0 0 0 0 352 963 0 0 667 ] >>
+----- OBJECT 11 -----
+<< /BaseFont /WZZSSZ+CenturySchoolbook /Encoding /MacRomanEncoding /FirstChar 32 /FontDescriptor 28 0 R /LastChar 213 /Subtype /TrueType /Type /Font /Widths [ 278 0 0 0 0 0 0 0 0 0 0 0 278 0 278 0 0 0 0 0 0 0 0 0 0 0 0 278 0 0 0 444 0 722 0 722 778 722 667 0 833 407 0 0 667 944 815 778 667 778 0 630 667 815 722 0 0 0 0 0 0 0 0 0 0 556 556 444 574 500 333 537 611 315 296 593 315 889 611 500 574 556 444 463 389 611 537 778 0 537 481 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 389 389 0 204 ] >>
+----- OBJECT 12 -----
+Object is stream.  Dictionary:
+<< /Alternate /DeviceRGB /Filter /FlateDecode /Length 13 0 R /N 3 >>
+----- OBJECT 13 -----
+2612
+----- OBJECT 14 -----
+<< /Contents 15 0 R /MediaBox [ 0 0 612 792 ] /Parent 3 0 R /Resources 17 0 R /Type /Page >>
+----- OBJECT 15 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 16 0 R >>
+----- OBJECT 16 -----
+7016
+----- OBJECT 17 -----
+<< /ColorSpace << /Cs1 7 0 R >> /Font << /TT2 9 0 R /TT4 11 0 R >> /ProcSet [ /PDF /Text ] >>
+----- OBJECT 18 -----
+<< /Contents 19 0 R /MediaBox [ 0 0 612 792 ] /Parent 3 0 R /Resources 21 0 R /Type /Page >>
+----- OBJECT 19 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 20 0 R >>
+----- OBJECT 20 -----
+5283
+----- OBJECT 21 -----
+<< /ColorSpace << /Cs1 7 0 R >> /Font << /TT2 9 0 R /TT4 11 0 R >> /ProcSet [ /PDF /Text ] >>
+----- OBJECT 22 -----
+<< /Pages 3 0 R /Type /Catalog >>
+----- OBJECT 23 -----
+<< /Ascent 952 /AvgWidth 521 /CapHeight 644 /Descent -269 /Flags 4 /FontBBox [ -503 -307 1240 1026 ] /FontFile2 26 0 R /FontName /OYOJDU+Calibri /ItalicAngle 0 /MaxWidth 1328 /StemV 0 /Type /FontDescriptor /XHeight 476 >>
+----- OBJECT 24 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 25 0 R >>
+----- OBJECT 25 -----
+235
+----- OBJECT 26 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 27 0 R /Length1 1208 >>
+----- OBJECT 27 -----
+921
+----- OBJECT 28 -----
+<< /Ascent 986 /AvgWidth 464 /CapHeight 739 /Descent -216 /Flags 32 /FontBBox [ -165 -307 1246 1201 ] /FontFile2 29 0 R /FontName /WZZSSZ+CenturySchoolbook /ItalicAngle 0 /MaxWidth 1288 /StemV 0 /Type /FontDescriptor /XHeight 471 >>
+----- OBJECT 29 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 30 0 R /Length1 20756 >>
+----- OBJECT 30 -----
+15886
+----- OBJECT 31 -----
+<< /Ascent 986 /AvgWidth 524 /CapHeight 739 /Descent -216 /Flags 32 /FontBBox [ -177 -319 1388 1137 ] /FontFile2 32 0 R /FontName /TIDYFN+CenturySchoolbook-Bold /ItalicAngle 0 /MaxWidth 1426 /StemV 0 /Type /FontDescriptor /XHeight 477 >>
+----- OBJECT 32 -----
+Object is stream.  Dictionary:
+<< /Filter /FlateDecode /Length 33 0 R /Length1 7816 >>
+----- OBJECT 33 -----
+5763
+----- OBJECT 34 -----
+(Sample PDF)
+----- OBJECT 35 -----
+(Mac OS X 10.11.3 Quartz PDFContext)
+----- OBJECT 36 -----
+(Philip Hutchison)
+----- OBJECT 37 -----
+()
+----- OBJECT 38 -----
+(Word)
+----- OBJECT 39 -----
+(D:20160319061844Z00'00')
+----- OBJECT 40 -----
+()
+----- OBJECT 41 -----
+[ ]
+----- OBJECT 42 -----
+null
+----- OBJECT 43 -----
+null
+----- OBJECT 44 -----
+null
+----- OBJECT 45 -----
+null
+----- OBJECT 46 -----
+null
+----- OBJECT 47 -----
+null
+----- OBJECT 48 -----
+null
+----- OBJECT 49 -----
+null
+----- OBJECT 50 -----
+null

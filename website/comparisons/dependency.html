@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Dependency | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/#comparison">← Back to Comparison</a></li>
+        </ul>
+      </nav>
+
+      <section class="section comparison-detail">
+        <div class="section-header">
+          <span class="section-number">💻</span>
+          <h2>Software Dependency</h2>
+        </div>
+        <div class="section-content">
+          <div class="detail-content">
+            <p class="lead-text">A printed book needs only light to be read. A PDF requires electricity, hardware, an operating system, and rendering software, each layer adding complexity and potential points of failure.</p>
+            
+            <div class="diagram-split">
+              <div class="metadata-explanation">
+                <h3>The Technology Stack</h3>
+                <p>To read a PDF, you need an entire ecosystem of technology working together. Each layer depends on the one below it:</p>
+
+                <div class="dependency-stack">
+                  <div class="stack-layer layer-top">
+                    <span class="layer-name">PDF Reader</span>
+                    <span class="layer-examples">Adobe Acrobat, Preview, Chrome, Kindle</span>
+                  </div>
+                  <div class="stack-arrow">↓ requires</div>
+                  <div class="stack-layer">
+                    <span class="layer-name">Operating System</span>
+                    <span class="layer-examples">macOS, Windows, iOS, Android, Linux</span>
+                  </div>
+                  <div class="stack-arrow">↓ requires</div>
+                  <div class="stack-layer">
+                    <span class="layer-name">Hardware</span>
+                    <span class="layer-examples">Computer, tablet, phone, e-reader</span>
+                  </div>
+                  <div class="stack-arrow">↓ requires</div>
+                  <div class="stack-layer layer-bottom">
+                    <span class="layer-name">Electricity</span>
+                    <span class="layer-examples">Battery, power grid, generator</span>
+                  </div>
+                </div>
+
+                <h3>Rendering Varies by Software</h3>
+                <p>The same PDF file may look different depending on what software interprets it. Fonts may substitute, colors may shift, and interactive elements may not work at all. A Kindle renders a PDF very differently than Adobe Acrobat on a desktop.</p>
+
+                <h3>Points of Failure</h3>
+                <ul class="metadata-features">
+                  <li><strong>Power outage</strong> ,  No electricity, no reading</li>
+                  <li><strong>Software update</strong> ,  New versions may break old files</li>
+                  <li><strong>Format obsolescence</strong> ,  Will PDF readers exist in 100 years?</li>
+                  <li><strong>DRM restrictions</strong> ,  Software can refuse to open files</li>
+                  <li><strong>Missing fonts</strong> ,  Text may display incorrectly</li>
+                  <li><strong>Device failure</strong> ,  Hardware dies, access lost</li>
+                </ul>
+
+                <h3>The Print Advantage</h3>
+                <p>A book printed 500 years ago can still be read today with no special equipment. The same cannot be said for a PDF created 5 years ago on obsolete software. Print's "technology stack" is remarkably simple: paper + ink + light + eyes.</p>
+              </div>
+
+              <div class="objects-container">
+                <h4>Reading Requirements</h4>
+                
+                <div class="object-block">
+                  <span class="object-label">To Read a Printed Book</span>
+                  <pre class="object-code">Requirements:
+  ✓ Light source
+  ✓ The book itself
+  ✓ Eyes (or fingers for Braille)
+  
+<span class="highlight">Total dependencies: ~1</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">To Read a PDF</span>
+                  <pre class="object-code">Requirements:
+  ✓ Electricity
+  ✓ Computing device
+  ✓ Operating system
+  ✓ PDF rendering software
+  ✓ Display screen
+  ✓ The PDF file
+  ✓ (Often) Internet connection
+  
+<span class="highlight">Total dependencies: 6-7+</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Same PDF, Different Renderings</span>
+                  <pre class="object-code"><span class="highlight">Adobe Acrobat:</span>
+  Fonts: Embedded ✓
+  Colors: Accurate ✓
+  Forms: Interactive ✓
+
+<span class="highlight">Kindle:</span>
+  Fonts: Substituted
+  Colors: Grayscale
+  Forms: Static only
+
+<span class="highlight">Mobile Chrome:</span>
+  Fonts: System fallback
+  Colors: Depends on screen
+  Forms: Limited support</pre>
+                  <p class="object-note">Same file, different experiences</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Historical Longevity</span>
+                  <pre class="object-code">Dead Sea Scrolls: <span class="highlight">~2000 years</span>
+  Still readable ✓
+
+Gutenberg Bible: <span class="highlight">~570 years</span>
+  Still readable ✓
+
+PDF format: <span class="highlight">~31 years</span>
+  Readable... for now</pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="reflection-box" style="margin-top: var(--space-xl);">
+              <h4>Mediated Reading</h4>
+              <p>Every PDF reading experience is <em>mediated</em> by layers of technology that interpret, render, and display the content. The software makes invisible decisions about how to present the text. With print, what you see is what was physically created. With PDFs, what you see is one possible interpretation of abstract data.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metadata | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/#comparison">← Back to Comparison</a></li>
+        </ul>
+      </nav>
+
+      <section class="section comparison-detail">
+        <div class="section-header">
+          <span class="section-number">💻</span>
+          <h2>Metadata</h2>
+        </div>
+        <div class="section-content">
+          <div class="detail-content">
+            <p class="lead-text">Every PDF carries hidden information about its creation, modification, and authorship, invisible to the casual reader but embedded in the file itself.</p>
+            
+            <div class="diagram-split">
+              <div class="metadata-explanation">
+                <h3>What is Metadata?</h3>
+                <p>Metadata is "data about data", information that describes the document but isn't part of its visible content. Unlike a printed book, where production details might appear on a colophon page, PDF metadata is embedded in the file's code structure.</p>
+                
+                <h3>What Gets Recorded</h3>
+                <ul class="metadata-features">
+                  <li><strong>Author</strong> ,  Who created the document</li>
+                  <li><strong>Title</strong> ,  The document's name</li>
+                  <li><strong>Creator</strong> ,  The software used to create it</li>
+                  <li><strong>Producer</strong> ,  The software that generated the PDF</li>
+                  <li><strong>Creation Date</strong> ,  When the file was first made</li>
+                  <li><strong>Modification Date</strong> ,  When it was last changed</li>
+                  <li><strong>Keywords</strong> ,  Searchable tags</li>
+                  <li><strong>Subject</strong> ,  Topic description</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>Unlike a printed page, a PDF remembers its history. This has implications for privacy, authenticity, and the nature of digital documents. Metadata can reveal:</p>
+                <ul class="metadata-features">
+                  <li>The original author even after editing</li>
+                  <li>What software was used (Word, InDesign, etc.)</li>
+                  <li>Exact timestamps of creation and edits</li>
+                  <li>The operating system it was made on</li>
+                </ul>
+              </div>
+
+              <div class="objects-container">
+                <h4>Real PDF Metadata Objects</h4>
+                
+                <div class="object-block">
+                  <span class="object-label">Object 1 ,  Metadata Dictionary</span>
+                  <pre class="object-code">&lt;&lt; 
+  /Title <span class="highlight">34 0 R</span>
+  /Author <span class="highlight">36 0 R</span>
+  /Subject 37 0 R
+  /Creator <span class="highlight">38 0 R</span>
+  /Producer <span class="highlight">35 0 R</span>
+  /CreationDate <span class="highlight">39 0 R</span>
+  /ModDate 39 0 R
+  /Keywords 40 0 R
+&gt;&gt;</pre>
+                  <p class="object-note">References point to other objects containing actual values</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 34 ,  Title</span>
+                  <pre class="object-code"><span class="highlight">(Sample PDF)</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 36 ,  Author</span>
+                  <pre class="object-code"><span class="highlight">(Philip Hutchison)</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 38 ,  Creator Application</span>
+                  <pre class="object-code"><span class="highlight">(Word)</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 35 ,  Producer</span>
+                  <pre class="object-code"><span class="highlight">(Mac OS X 10.11.3 Quartz PDFContext)</span></pre>
+                  <p class="object-note">Reveals the operating system used</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 39 ,  Creation Date</span>
+                  <pre class="object-code"><span class="highlight">(D:20160319061844Z00'00')</span></pre>
+                  <p class="object-note">March 19, 2016 at 6:18:44 AM UTC</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reflection-box" style="margin-top: var(--space-xl);">
+              <h4>Print Comparison</h4>
+              <p>A printed book might include a colophon listing the printer, typeface, and paper, but this is <em>chosen</em> information, curated by the publisher. PDF metadata is <em>automatic</em>, often recorded without the author's awareness. The digital document keeps a hidden record that the printed page cannot.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

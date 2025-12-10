@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperlinks | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/#comparison">← Back to Comparison</a></li>
+        </ul>
+      </nav>
+
+      <section class="section comparison-detail">
+        <div class="section-header">
+          <span class="section-number">💻</span>
+          <h2>Hyperlinks</h2>
+        </div>
+        <div class="section-content">
+          <div class="detail-content">
+            <p class="lead-text">PDFs can contain clickable connections to other documents, websites, and locations within the file itself, creating a web of intertextuality that print can only approximate.</p>
+            
+            <div class="diagram-split">
+              <div class="metadata-explanation">
+                <h3>Types of Links in PDFs</h3>
+                <p>Hyperlinks in PDFs go far beyond simple web URLs:</p>
+                
+                <ul class="metadata-features">
+                  <li><strong>External URLs</strong> ,  Links to websites</li>
+                  <li><strong>Internal navigation</strong> ,  Jump to other pages</li>
+                  <li><strong>Table of contents</strong> ,  Clickable chapter links</li>
+                  <li><strong>Footnote references</strong> ,  Instant access to notes</li>
+                  <li><strong>Email links</strong> ,  Open mail client</li>
+                  <li><strong>File links</strong> ,  Open other documents</li>
+                  <li><strong>Embedded actions</strong> ,  Trigger JavaScript</li>
+                </ul>
+
+                <h3>Print's Limitations</h3>
+                <p>Printed texts developed their own systems for cross-referencing:</p>
+                
+                <div class="copy-comparison-grid">
+                  <div class="copy-card print-copy">
+                    <h4>📖 Print Cross-References</h4>
+                    <ul>
+                      <li>"See page 47"</li>
+                      <li>Footnotes at page bottom</li>
+                      <li>Endnotes in back matter</li>
+                      <li>Bibliography citations</li>
+                      <li>Index entries</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="copy-card digital-copy">
+                    <h4>🔗 PDF Hyperlinks</h4>
+                    <ul>
+                      <li>Click to jump instantly</li>
+                      <li>Hover to preview</li>
+                      <li>Open external resources</li>
+                      <li>Back button navigation</li>
+                      <li>Searchable destinations</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>Changed Reading Behavior</h3>
+                <p>Hyperlinks fundamentally change how we read. Instead of linear progression through pages, readers can jump between sections, chase references, and explore tangentially. This mirrors how we browse the web, but embedded in what looks like a "page."</p>
+
+                <h3>The Problem of Link Rot</h3>
+                <p>External hyperlinks are fragile. Websites disappear, URLs change, and servers shut down. A PDF from 2010 may contain dozens of dead links, digital footnotes pointing to nothing. Print citations, while requiring manual lookup, never "break."</p>
+              </div>
+
+              <div class="objects-container">
+                <h4>How Links Work in PDFs</h4>
+                
+                <div class="object-block">
+                  <span class="object-label">Link Annotation Object</span>
+                  <pre class="object-code">&lt;&lt;
+  /Type <span class="highlight">/Annot</span>
+  /Subtype <span class="highlight">/Link</span>
+  /Rect [72 650 200 670]
+  /Border [0 0 0]
+  /A &lt;&lt;
+    /Type /Action
+    /S <span class="highlight">/URI</span>
+    /URI <span class="highlight">(https://example.com)</span>
+  &gt;&gt;
+&gt;&gt;</pre>
+                  <p class="object-note">Defines clickable region and destination</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Internal Link (Go To Page)</span>
+                  <pre class="object-code">&lt;&lt;
+  /Type /Annot
+  /Subtype /Link
+  /Rect [100 500 180 520]
+  /A &lt;&lt;
+    /Type /Action
+    /S <span class="highlight">/GoTo</span>
+    /D <span class="highlight">[5 0 R /FitH 800]</span>
+  &gt;&gt;
+&gt;&gt;</pre>
+                  <p class="object-note">Jumps to page 5, position 800</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">What the Reader Sees</span>
+                  <pre class="object-code">For more information, see
+<span class="highlight" style="text-decoration: underline; cursor: pointer;">Chapter 3: Methods</span>
+
+References:
+1. Smith (2020) <span class="highlight" style="text-decoration: underline;">Link</span>
+2. Jones (2019) <span class="highlight" style="text-decoration: underline;">Link</span> ← <span style="color: #ef4444;">404 Not Found</span></pre>
+                  <p class="object-note">Links can break over time</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Print Equivalent</span>
+                  <pre class="object-code">For more information, see
+Chapter 3: Methods (p. 47)
+
+References:
+1. Smith, J. (2020). Title.
+   Publisher. pp. 123-145.
+2. Jones, K. (2019). Title.
+   Journal, 15(2), 67-89.</pre>
+                  <p class="object-note">Requires manual lookup, but never "breaks"</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reflection-box" style="margin-top: var(--space-xl);">
+              <h4>Intertextuality Made Instant</h4>
+              <p>Literary scholars speak of "intertextuality", how texts reference and build upon other texts. Print made this visible through citations and allusions. PDFs make it <em>actionable</em>. A reader can instantly access the referenced source, blurring the boundary between the document and its references. The text becomes a node in a network rather than a self-contained object.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

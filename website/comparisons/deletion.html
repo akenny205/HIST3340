@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deletability | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/#comparison">← Back to Comparison</a></li>
+        </ul>
+      </nav>
+
+      <section class="section comparison-detail">
+        <div class="section-header">
+          <span class="section-number">💻</span>
+          <h2>Deletability</h2>
+        </div>
+        <div class="section-content">
+          <div class="detail-content">
+            <p class="lead-text">Digital files can be deleted with a keystroke, but "deletion" is more complicated than it appears. Traces remain in ways that physical destruction does not allow.</p>
+            
+            <div class="diagram-split">
+              <div class="metadata-explanation">
+                <h3>The Illusion of Deletion</h3>
+                <p>When you delete a PDF, the file doesn't actually disappear. The operating system simply marks that disk space as "available", the data remains until it's overwritten by something else. This creates a paradox: digital files are both easier to delete and harder to truly destroy than physical texts.</p>
+
+                <h3>Destroying Physical vs. Digital</h3>
+                
+                <div class="copy-comparison-grid">
+                  <div class="copy-card print-copy">
+                    <h4>🔥 Physical Destruction</h4>
+                    <ul>
+                      <li>Burning leaves ash</li>
+                      <li>Shredding is irreversible</li>
+                      <li>Water damage destroys</li>
+                      <li>One copy = one destruction</li>
+                      <li>Requires physical access</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="copy-card digital-copy">
+                    <h4>🗑️ Digital "Deletion"</h4>
+                    <ul>
+                      <li>Data persists on disk</li>
+                      <li>Recovery tools can retrieve</li>
+                      <li>Backups may exist</li>
+                      <li>Copies spread globally</li>
+                      <li>Cloud storage complicates</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>Where Traces Remain</h3>
+                <p>A "deleted" PDF may persist in multiple locations:</p>
+                <ul class="metadata-features">
+                  <li><strong>Disk sectors</strong> ,  Until overwritten</li>
+                  <li><strong>Email servers</strong> ,  If ever sent as attachment</li>
+                  <li><strong>Cloud backups</strong> ,  Automatic syncing</li>
+                  <li><strong>Recipient copies</strong> ,  Once shared, uncontrollable</li>
+                  <li><strong>Web archives</strong> ,  Wayback Machine, etc.</li>
+                  <li><strong>Forensic recovery</strong> ,  Professional tools</li>
+                </ul>
+
+                <h3>Historical Implications</h3>
+                <p>Book burning has been used throughout history to suppress ideas. But digital texts resist this kind of destruction, they proliferate too easily. Conversely, digital texts face new threats: format obsolescence, platform shutdown, and the fragility of storage media.</p>
+              </div>
+
+              <div class="objects-container">
+                <h4>What "Delete" Actually Does</h4>
+                
+                <div class="object-block">
+                  <span class="object-label">Before Deletion</span>
+                  <pre class="object-code">File: document.pdf
+Location: <span class="highlight">/Users/me/docs/</span>
+Status: <span class="highlight">Active</span>
+Disk sectors: 1847-1892</pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">After "Deletion"</span>
+                  <pre class="object-code">File: <span class="highlight">(removed from index)</span>
+Location: <span class="highlight">(pointer removed)</span>
+Status: <span class="highlight">"Available"</span>
+Disk sectors: 1847-1892
+<span class="highlight">↑ Data still exists here</span></pre>
+                  <p class="object-note">Only the reference is removed, not the data</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">After Overwrite</span>
+                  <pre class="object-code">File: new_file.pdf
+Location: /Users/me/docs/
+Status: Active
+Disk sectors: 1847-1892
+<span class="highlight">↑ Original data now gone</span></pre>
+                  <p class="object-note">Only now is the original truly "deleted"</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">But Also Consider...</span>
+                  <pre class="object-code">Email sent: 2024-03-15
+  └─ Server backup: <span class="highlight">✓ exists</span>
+  └─ Recipient copy: <span class="highlight">✓ exists</span>
+  
+Cloud sync: Dropbox
+  └─ Version history: <span class="highlight">✓ exists</span>
+  └─ Deleted files: <span class="highlight">30-day retention</span></pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="reflection-box" style="margin-top: var(--space-xl);">
+              <h4>The Permanence Paradox</h4>
+              <p>Digital texts exist in a strange state: individually fragile (a corrupted bit can render a file unreadable), yet collectively persistent (copies spread faster than they can be suppressed). A burned book is gone forever; a "deleted" PDF may resurface years later. This changes the nature of censorship, privacy, and historical preservation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

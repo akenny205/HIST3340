@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compression | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/#comparison">← Back to Comparison</a></li>
+        </ul>
+      </nav>
+
+      <section class="section comparison-detail">
+        <div class="section-header">
+          <span class="section-number">💻</span>
+          <h2>Compression</h2>
+        </div>
+        <div class="section-content">
+          <div class="detail-content">
+            <p class="lead-text">PDFs use compression to reduce file size while maintaining visual fidelity.</p>
+            
+            <h3>PDF File Structure</h3>
+            <p>A PDF file is organized into distinct sections, with compressed streams containing the actual content:</p>
+            
+            <div class="diagram-split">
+              <div class="diagram-container">
+                <pre class="ascii-diagram">
+                   ┌───────────────────────────────┐
+                   │            Header              │
+                   │         %PDF-1.7               │
+                   └───────────────────────────────┘
+                                 │
+                                 ▼
+         ┌───────────────────────────────────────────────────────┐
+         │                        Body                           │
+         │                                                        │
+         │  ┌─────────────┐    ┌──────────────────────────────┐  │
+         │  │ PDF Object  │    │ Compressed Stream            │  │
+         │  │ (Readable)  │    │ (Fonts, images, commands)    │  │
+         │  └─────────────┘    └──────────────────────────────┘  │
+         │                                                        │
+         └───────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+         ┌───────────────────────────────────────────────────────┐
+         │               Cross-Reference Table (xref)            │
+         │   Maps object numbers → byte positions in file        │
+         └───────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+         ┌───────────────────────────────────────────────────────┐
+         │                       Trailer                         │
+         │    Points to root object, info object, and xref       │
+         └───────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+                   ┌───────────────────────────────┐
+                   │              EOF               │
+                   │             %%EOF              │
+                   └───────────────────────────────┘
+                </pre>
+              </div>
+
+              <div class="objects-container">
+                <h4>Real PDF Objects</h4>
+                
+                <div class="object-block">
+                  <span class="object-label">Object 1 ,  Metadata Dictionary</span>
+                  <pre class="object-code">&lt;&lt; 
+  /Author <span class="highlight">36 0 R</span>
+  /Title 34 0 R
+  /Creator 38 0 R
+  /CreationDate 39 0 R
+  ...
+&gt;&gt;</pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 36 ,  Author Value</span>
+                  <pre class="object-code"><span class="highlight">(Philip Hutchison)</span></pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 2 ,  Page Definition</span>
+                  <pre class="object-code">&lt;&lt; 
+  /Type /Page
+  /Contents <span class="highlight">4 0 R</span>
+  /MediaBox [ 0 0 612 792 ]
+  /Resources 6 0 R
+&gt;&gt;</pre>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 4 ,  Content Stream</span>
+                  <pre class="object-code">Stream Dictionary:
+&lt;&lt; 
+  /Filter /FlateDecode
+  /Length <span class="highlight">5 0 R</span>
+&gt;&gt;</pre>
+                  <p class="object-note">⚠️ Actual content is compressed binary data</p>
+                </div>
+
+                <div class="object-block">
+                  <span class="object-label">Object 5 ,  Stream Length</span>
+                  <pre class="object-code"><span class="highlight">6917</span> bytes</pre>
+                </div>
+              </div>
+            </div>
+
+            <h3>Key Insight</h3>
+            <p>The actual text you read on a PDF page is hidden inside <strong>compressed binary streams</strong>, you can't just open a PDF in a text editor and read the content. This is a fundamental difference from print, where the text is literally visible ink on paper.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

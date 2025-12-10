@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Materiality of the PDF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+      <nav class="main-nav">
+        <a href="/" class="nav-brand">PDF Materiality</a>
+        <ul class="nav-links">
+          <li><a href="/">← Back to Home</a></li>
+        </ul>
+      </nav>
+
+      <!-- About Me Section -->
+      <section class="section section-accent" style="padding-top: calc(80px + var(--space-xl));">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="section-content">
+          <div class="ownership-comparison">
+            <div class="ownership-card" style="background: rgba(255, 255, 255, 0.9);">
+              <h4>🎓 Andrew Kenny</h4>
+              <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 0;">
+                I'm a <strong>third-year Computer Science major</strong> with a passion for understanding how technology shapes our relationship with information. While I spend most of my time writing code, this course has given me a new lens through which to view digital objects, not just as functional tools, but as artifacts with their own histories, materials, and meanings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About the Class Section -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2>About the Class</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <p class="lead-text">HIST 3340: Technologies of Text</p>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+              This course explores the <strong>history of textual technologies</strong>, from handwritten manuscripts to printed books to digital documents. We've examined how the material form of texts shapes how they are created, distributed, read, and preserved.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+              Throughout the semester, we've studied everything from medieval scribes and the printing press to the rise of zines and digital formats. The central question driving our work: <em>How does the medium of a text shape its meaning?</em>
+            </p>
+          </div>
+          
+          <div class="quote-card" style="margin-top: var(--space-lg);">
+            <blockquote>
+              This website is my <strong>Final Creative Expression Project</strong>, a chance to synthesize what I've learned and explore a topic that bridges my background in computer science with the humanistic questions at the heart of this course.
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="section section-dark">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2>How This Website Was Built</h2>
+        </div>
+        <div class="section-content">
+          <p class="section-intro">Building a website is a lot like building a house. Different technologies play different roles, from the structure to the style to the behind-the-scenes systems that make everything work.</p>
+          
+          <div class="house-analogy">
+            <h3 style="color: var(--color-cream); margin-bottom: var(--space-lg); font-size: 1.5rem;">🏠 The House Analogy</h3>
+            
+            <div class="mechanics-grid">
+              <div class="mechanic-card">
+                <div class="mechanic-icon">🧱</div>
+                <h4>HTML ,  The Structure</h4>
+                <p style="font-style: italic; color: var(--color-sepia); margin-bottom: var(--space-sm);">Walls, rooms, and doors</p>
+                <p>HTML defines the <strong>basic structure</strong> of a webpage. Just like walls divide a house into rooms, HTML creates the sections, headings, paragraphs, and containers that organize content. It's the skeleton that holds everything together.</p>
+              </div>
+              
+              <div class="mechanic-card">
+                <div class="mechanic-icon">🎨</div>
+                <h4>CSS ,  The Style</h4>
+                <p style="font-style: italic; color: var(--color-sepia); margin-bottom: var(--space-sm);">Paint, flooring, and interior design</p>
+                <p>CSS controls how everything <strong>looks</strong>. Colors, fonts, spacing, layouts, all the visual design choices that transform bare walls into a beautiful space. It's what gives this site its warm, scholarly aesthetic.</p>
+              </div>
+              
+              <div class="mechanic-card">
+                <div class="mechanic-icon">💡</div>
+                <h4>TypeScript ,  The Behavior</h4>
+                <p style="font-style: italic; color: var(--color-sepia); margin-bottom: var(--space-sm);">Lights, plumbing, and thermostats</p>
+                <p>TypeScript adds <strong>interactivity</strong>, the things that respond when you click, toggle, or scroll. Like the electrical and plumbing systems that make a house functional, TypeScript makes the interactive PDF layer demo and navigation work.</p>
+              </div>
+              
+              <div class="mechanic-card">
+                <div class="mechanic-icon">🔧</div>
+                <h4>Vite ,  The Build Tool</h4>
+                <p style="font-style: italic; color: var(--color-sepia); margin-bottom: var(--space-sm);">Construction crew and power tools</p>
+                <p>Vite is the <strong>behind-the-scenes machinery</strong> that assembles everything during development. It's like having a construction crew with power tools, you don't see them in the finished house, but they made building it much faster and easier.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reflection-box" style="margin-top: var(--space-xl); background: rgba(255, 255, 255, 0.1);">
+            <h4 style="color: var(--color-digital-glow);">Why Build From Scratch?</h4>
+            <p style="color: var(--color-cream);">
+              Just as the <em>materiality</em> of a printed book matters, its paper, binding, and typography, the technology behind a website shapes its character. I built this site without heavy frameworks to maintain full control over its design, mirroring how the format of a text shapes its meaning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Connection Section -->
+      <section class="section">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2>Why This Project?</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <p class="lead-text">We encounter PDFs every day, but rarely think about what they actually are.</p>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+              As someone who writes code daily, I wanted to investigate the <strong>hidden complexity</strong> of a format I take for granted. The PDF isn't just a "digital piece of paper", it's a sophisticated technology with its own history, assumptions, and consequences for how we read and share information.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.7;">
+              This project bridges my technical background with the humanistic questions we've explored in class: <em>How does format shape meaning? What do we gain and lose in the digital transition? Who controls access to texts?</em>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p>HIST 3340 • Fall 2025</p>
+          <p class="footer-note">Built to explore the materiality of digital texts</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
